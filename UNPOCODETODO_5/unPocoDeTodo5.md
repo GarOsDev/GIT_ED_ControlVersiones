@@ -30,3 +30,37 @@ Una vez resuelto el comando con referencia dada, la salida por consola mostrará
 ![Alt text](Introduccion_comandoSalida.jpg)
 
 Donde **numCommits** será la cantidad de entregas que se han realizado **a partir del tag** en el cual nos hemos situado y **hash** está haciendo referencia al commit que en ese momento esta siendo indicado.
+
+# ENTENDIENDO EJEMPLO PRÁCTICO 
+
+Una vez hemos hecho la introducción teórica a este nuevo comando GIT, he decidido mostrar, antes de proceder a resolver el ejercicio propuesto, un ejemplo práctico que nos propone la plataforma, y es el siguiente:
+
+![Alt text](ejemploPractico1.jpg)
+
+Vemos como, para la evolución de proyecto mostrada, estamos en la branch side. A continuación el programa nos muestra la salida por consola tanto si aplicamos **git describe** a **main** o a **side**:
+
+![Alt text](ejemploPractico2.jpg)
+
+Y aqui podemos ver claramente el funcionamiento de este comando:
+
+### main
+
+Si escribimos por consola **git describe main** estaríamos situándonos en el ultimo commit de la rama master obteniendo el siguiente resultado: **v1_2_gC2**
+
+¿Que significa cada valor?:
+
+- v1: para main, v1 sería el **tag** o evento o "hito" mas cercano. Es por ello por lo que lo toma como referencia.
+- 2: el valor numérico 2, sería la cantidad de commits o "entregas" que existen desde el el hito mas cercano de referencia hasta el punto donde nos encontramos. En este caso el commit c1 y c2.
+- gC2: al encontrarnos en c2 de main, sería su hash que en ese momento estamos describiendo.
+
+### side
+
+¿Y para la rama creada side? Vemos que obtenemos como resultado **v2_1_gC4**. Aplicando el razonamiento anterior, averigüemos que significa cada valor:
+
+- v2: como podemos ver basandonos en el diagrama, v2 sería el **tag** o hito mas cercano que tenemos al situarnos en este punto de la rama side.
+- 1: valor numerico 1, esto es el numero de entregas existentes desde el tag v2 hasta c4 (asterisco). Como podemos ver, una unica entrega, el commit c4 que se ha realizado.
+- gc4: el hash del punto que vamos a describir, es decir el commit 4 de la rama side.
+
+Y una vez mostrada esta pequeña introducción práctica, la web nos conduce a la resolución del ejercicio:
+
+![Alt text](ejemploPracticoFinal.jpg)
