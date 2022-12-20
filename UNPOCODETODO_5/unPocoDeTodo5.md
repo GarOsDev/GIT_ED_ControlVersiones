@@ -16,3 +16,17 @@ Pues bien, GIT, a partir de un **hito** determinado, con el comando >git describ
 Pero no nos extendamos mucho mas, a continuación muestro cómo trata de enseñarnos la plataforma este concepto, y comenzaremos a realizar el ejercicio propuesto:
 
 ![Alt text](Introduccion.jpg)
+
+## EJECUCION DE COMANDO _GIT DESCRIBE_
+
+Una vez tenemos una idea aproximada sobre en qué consiste el comando _git describe_ tendremos que saber como usarlo correctamente en nuestro terminal GIT. En esta ocasión, vamos a mostrar como nos lo enseña la platarforma y posteriormente trataremos de razonar su funcionamiento:
+
+![Alt text](Introduccion_funcionamiento.jpg)
+
+Como podemos enteder, para poder hacer uso de este comando, necesitaremos proporcionarle como parámetro una **<ref>**  o referencia que el que tomará GIT como punto de destino para situarnos en ese **tag** de proyecto. Nos informa la web que si no le proporcionamos ninguna referencia como parámetro, GIT automaticamente nos situará en el commit mas cercano.
+
+Una vez resuelto el comando con referencia dada, la salida por consola mostrará la siguiente información:
+
+![Alt text](Introduccion_comandoSalida.jpg)
+
+Donde **numCommits** será la cantidad de entregas que se han realizado **a partir del tag** en el cual nos hemos situado y **hash** está haciendo referencia al commit que en ese momento esta siendo indicado.
