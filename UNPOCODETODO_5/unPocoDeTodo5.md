@@ -64,3 +64,29 @@ Si escribimos por consola **git describe main** estaríamos situándonos en el u
 Y una vez mostrada esta pequeña introducción práctica, la web nos conduce a la resolución del ejercicio:
 
 ![Alt text](ejemploPracticoFinal.jpg)
+
+# RESOLVIENDO EJERCICIO
+
+- Comienzo el ejercicio propuesto partiendo desde la siguiente situación:
+
+![Alt text](ResolEjercicio1.jpg)
+
+Tal y como nos indica el cuadro de comandos, tendremos que hacer un commit de bugFix para finalizar el ejercicio, por ello escribimos **git commit**, para hacer una entrega del mismo:
+
+![Alt text](ResolEjercicio2.jpg)
+
+![Alt text](ResolEjercicio3.jpg)
+
+Y sencillamente con este paso, la web nos indica que hemos resuelto el ejercicio exitosamente:
+
+![Alt text](ResolEjercicioX.jpg)
+
+Pero no nos quedemos aqui, para poder ver como aplicamos el comando que acabamos de aprender, voy a escribir por linea de comando un ejemplo para **git describe c7**. Obtenemos el siguiente resultado:
+
+![Alt text](ResolEjercicioXY.jpg)
+
+Obtenemos **v1_3_gC7**
+
+- v1: como podemos ver el diagrama, para la rama bugFix v1 sería el hito que el GIT toma como referencia
+- 3: valor numérico 3, que sería el número de commits desde el tag v1 hasta el punto en el que nos encontramos (c7), que como podemos contar serían 3.
+- gC7: el commit en el cual nos encontramos, el hash que este momento estamos describiendo
