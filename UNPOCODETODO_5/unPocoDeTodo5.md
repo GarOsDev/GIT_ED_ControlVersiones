@@ -19,7 +19,7 @@ Pero no nos extendamos mucho mas, a continuación muestro cómo trata de enseña
 
 ## EJECUCION DE COMANDO _GIT DESCRIBE_
 
-Una vez tenemos una idea aproximada sobre en qué consiste el comando _git describe_ tendremos que saber como usarlo correctamente en nuestro terminal GIT. En esta ocasión, vamos a mostrar como nos lo enseña la platarforma y posteriormente trataremos de razonar su funcionamiento:
+Una vez tenemos una idea aproximada sobre en qué consiste el comando _git describe_, tendremos que saber como usarlo correctamente en nuestro terminal GIT. En esta ocasión, vamos a mostrar como nos lo enseña la platarforma y posteriormente trataremos de razonar su funcionamiento:
 
 ![Alt text](Introduccion_funcionamiento.jpg)
 
