@@ -37,6 +37,16 @@ Aun así, hagamos click en siguiente para ver que más nos tiene que enseñar la
 
 ¡Pero bueno, si pasamos ya a la acción!
 
-Continuemos pues a iniciar la parte practica:
+Continuemos pues a ver este concepto en accion:
+
+Si hacemos click al boton siguiente de la anterior imagen, podemos apreciar que nuestro commit, (c3), GIT lo ha rechazado por que, como nuestro commit está vinculado al commit remoto c1, al haberse éste ultimo actualizado (a c2), nuestra entrega es automáticamente rechazada por hacer referencia, como deciamos, a una entrega desactualizada.
+
+![Alt text](introduccion4.jpg)
+
+Esto tiene muy facil arreglo, y la web nos los enseña a continuación:
+
+![Alt text](introduccion5.jpg)
+
+
 
 
