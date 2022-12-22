@@ -63,5 +63,34 @@ Una vez hecho click, la web ejecuta enteramente el proceso, lo desglosaré para 
 - Con un _rebaseo_ traeremos el trabajo realizado remotamente y así conseguiremos reflejar en nuestro trabajo, todos los cambios que tenia la rama remota.
 - Y finalmente, solo nos quedaría hacer un _push_ de nuestro trabajo, ahora así actualizado con respecto a los ultimos cambios realizados remotamente.
 
+## Segunda forma
+
+GIT también nos ofrece una segunda forma de poder entregar nuestro trabajo por si la rama remota no se encuentra en sincronía con el que llevamos realizado.
+
+Y esto lo conseguiremos con el comando _git merge_
+
+![Alt text](introduccion8.jpg)
+
+Merge o "mezcla" lo que hará será fusionar cualquier tipo de cambio realizado en el codigo base en una rama separada de la rama en la que nos encontramos. Se consideraría como un commit por si mismo.
+
+Basicamente nos serviría para "traer" los cambios realizados en ramas anexas siendo ahora nuestro commit una entrega mas actual que la propia de la rama remota, quedando esta "desactualizada"
+
+Hay que indicar que, si existe algun cambio de la rama en la que nos encontramos al que no se le haya hecho un commit , GIT no permitirá el _merge_ hasta que no se hayan entregado todos los cambios de nuestro trabajo o rama.
+
+![Alt text](introduccion9.jpg)
+
+Si hacemos click en continuar...
+
+![Alt text](introduccion10.jpg)
+
+Vemos como se han creado tanto para nuestra rama como para principal respectivas ramas c2 y c3. En primer lugar se crea la rama c2 para así, gracias a un _git fetch_ actualizar nuestro tabajo local a partir del remoto. Una vez actualizado, en la rama remota se crea la nueva rama c3 y finalmente aplicamos un _merge_ para así llevar nuestro trabajo a la rama remota. 
+
+Tan solo nos quedaría realizar un _git push_ para tener todo el proyecto en su ultima version.
+
+Veamos una tercera forma de realizar todo este proceso.
+
+## Tercera forma
+
+
 
 
