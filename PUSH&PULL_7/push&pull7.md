@@ -91,6 +91,33 @@ Veamos una tercera forma de realizar todo este proceso.
 
 ## Tercera forma
 
+Y esta tercera forma será mediante la aplicación, en unas pocas lineas de comandos, de varios métodos que ya conocemos que nos servirá para atajar en gran medida la actualizacion de nuestra rama local. Así es como nos lo presenta la web:
 
+![Alt text](introduccion11.jpg)
+
+Como podemos leer, aplicaremos en primer lugar un método de rebase:
+
+![Alt text](introduccion12.jpg)
+
+Para mover una rama (branch) en su totalidad a otro punto del arbol. El ejemplo mas simple suele ser moverse a una rama superior a la linea general de proyecto:
+
+![Alt text](introduccion13.jpg)
+
+Y posteriormente con un _git pull_, el cual nos servirá para actualizar la version local de nuestro repositorio a partir del remoto.
+
+![Alt text](introduccion14.jpg)
+
+Con esto conseguiremos:
+
+- Actualizar la rama de trabajo actual (la que acabamos de cambiar)
+- Actualizar las referencias de la rama remota para todas las demas ramas.
+
+![Alt text](introduccion15.jpg)
+
+_git pull_ recuperará (con git fetch) las nuevas confirmaciones y las fusionará (con un _git merge_) en nuestra rama local.
+
+Una vez llegados a este punto, ya hemos visto todos los metodos de gestión de flujos de trabajo, la web nos conduce a la resolución del ejercicio practico propuesto, a si que, vamos con ello:
+
+![Alt text](introduccion16.jpg)
 
 
