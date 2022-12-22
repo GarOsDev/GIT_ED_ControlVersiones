@@ -43,10 +43,25 @@ Si hacemos click al boton siguiente de la anterior imagen, podemos apreciar que 
 
 ![Alt text](introduccion4.jpg)
 
-Esto tiene muy facil arreglo, y la web nos los enseña a continuación:
+Esto tiene muy facil arreglo, y la web nos enseña varias formas de realizarlo a continuación:
+
+## Primera forma
 
 ![Alt text](introduccion5.jpg)
 
+Todo lo que tendríamos que hacer es ponernos a la altura o actualizar nuestro trabajo a la versión mas reciente de la rama remota. Según podemos leer, existen varias maneras, pero como realizaremos el ejercicio será mediante un rebase.
+
+Vamos a mostrar paso a paso este proceso para posteriormente realizar nuestro ejercicio:
+
+![Alt text](introduccion6.jpg)
+
+Una vez hecho click, la web ejecuta enteramente el proceso, lo desglosaré para así entender cada punto del proceso realizado:
+
+![Alt text](introduccion7.jpg)
+
+- Como pudimos ver en anteriores imágenes, nuestro proyecto se encontraba en una altura de entrega c3. - Haciendo un _git fetch_ lo que haremos será actualizar nuestro trabajo a la rama de proyecto principal o remota c2
+- Con un _rebaseo_ traeremos el trabajo realizado remotamente y así conseguiremos reflejar en nuestro trabajo, todos los cambios que tenia la rama remota.
+- Y finalmente, solo nos quedaría hacer un _push_ de nuestro trabajo, ahora así actualizado con respecto a los ultimos cambios realizados remotamente.
 
 
 
