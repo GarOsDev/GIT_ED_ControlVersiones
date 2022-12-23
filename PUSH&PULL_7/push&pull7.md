@@ -1,5 +1,5 @@
 # PESTAÑA PRINCIPAL 
-## Push & Pull 7_Trabajo Divergente_
+## Push & Pull 7_Historia Divergente_
 
 Iniciamos el segundo de los ejercicios asignados, que, como podemos ver, recibe el nombre de _trabajo divergente_. Antes de proceder con su desarrollo, y como de costumbre, realicemos una introducción al ejercicio para ponernos en contexto:
 
@@ -119,5 +119,34 @@ _git pull_ recuperará (con git fetch) las nuevas confirmaciones y las fusionar�
 Una vez llegados a este punto, ya hemos visto todos los metodos de gestión de flujos de trabajo, la web nos conduce a la resolución del ejercicio practico propuesto, a si que, vamos con ello:
 
 ![Alt text](introduccion16.jpg)
+
+## Resolviendo Ejercicio
+
+Como aprendimos, no podremos simplemente hacer un push para publicar nuestro trabajo hacia la rama remota, ya que GIT lo rechazará por haber una situación de mucha ambigüedad (debido a la divergencia del propio proyecto).
+
+Como nos enseñó la parte teórica, tendremos que basar o actualizar nuestro trabajo respecto a la versión mas actual de la rama remota.
+
+Por ello, partiendo de esta situacion inicial del ejercicio:
+
+![Alt text](Ejercicio1.jpg)
+
+Aplicaremos el primer método para su resolución:
+
+- En primer lugar clonaremos nuestro repositorio con el comando _git clone_
+
+![Alt text](Ejercicio2.jpg)
+
+![Alt text](Ejercicio3.jpg)
+
+- En segundo lugar simularemos una entrega de la rama remota, tomando ésta como la versión mas actualizada. Para ello nos cambiaremos con un _git checkout_ y posteriormente haremos una entrega del mismo con el comando _git commit_
+
+![Alt text](Ejercicio4.jpg)
+
+
+En segundo lugar actualizaremos con nuestra rama local con respecto a la remota aplicando un _git fetch_ :
+
+
+
+
 
 
