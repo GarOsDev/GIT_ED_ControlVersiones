@@ -132,18 +132,46 @@ Por ello, partiendo de esta situacion inicial del ejercicio:
 
 Aplicaremos el primer método para su resolución:
 
-- En primer lugar clonaremos nuestro repositorio con el comando _git clone_
+- En primer lugar simularé la entrega de un trabajo propio escribiendo en la linea de comandos _git commit_
 
 ![Alt text](Ejercicio2.jpg)
 
 ![Alt text](Ejercicio3.jpg)
 
-- En segundo lugar simularemos una entrega de la rama remota, tomando ésta como la versión mas actualizada. Para ello nos cambiaremos con un _git checkout_ y posteriormente haremos una entrega del mismo con el comando _git commit_
+- Posteriormente, con _git checkout main^_ moveremos el HEAD a la posicion inmediatamente superior:
+
+![Alt text](Ejercicio4_0.jpg)
 
 ![Alt text](Ejercicio4.jpg)
 
+- Y simularemos una entrega paralela a la nuestra, como ya conocemos, con el comando _git commit_ lograremos tal proposito:
 
-En segundo lugar actualizaremos con nuestra rama local con respecto a la remota aplicando un _git fetch_ :
+![Alt text](Ejercicio5.jpg)
+
+- Una vez en este punto, haremos un rebase del trabajo paralelo al nuestro y lo aplicaremos a nuestra rama local.
+Para ello, aplicaremos _git rebase main_ para aplicar este trabajo a nuestra rama main:
+
+![Alt text](Ejercicio6.jpg)
+
+![Alt text](Ejercicio7.jpg)
+
+- Pero para que estos cambios (mas actuales) se vean reflejados en nuestro trabajo, tendremos que volver a hacer referencia a nuestro main. Para ello, esta vez aplicaremos un _git checkout main_ para movernos a él:
+
+![Alt text](Ejercicio8.jpg)
+
+- Rebaseamos de nuevo nuestro main sobre el trabajo mas actual, para asi integrar los cambios:
+
+![Alt text](Ejercicio9.jpg)
+
+![Alt text](Ejercicio10.jpg)
+
+- Y finalmente tan solo nos quedaría clonar nuestro trabajo para que se vea reflejado en el remoto, para ello aplicaremos un _git clone_
+
+![Alt text](Ejercicio11.jpg)
+
+- Resolviendo de esta forma este ejercicio propuesto push&pull_7
+
+![Alt text](Ejercicio12.jpg)
 
 
 
