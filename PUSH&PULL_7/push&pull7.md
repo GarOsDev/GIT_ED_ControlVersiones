@@ -152,24 +152,24 @@ Vamos a resolver el ejercicio propuesto:
 
 ![Alt text](Fotografias/Ejercicio5.jpg)
 
-- Una vez en este punto, haremos un rebase de nuestro trabajo y lo aplicaremos a la rama de proyecto.
-Para ello, aplicaremos _git rebase main_ para aplicar nuestro trabajo sobre el remoto:
+- Una vez en este punto, haremos un rebase de nuestro trabajo y lo aplicaremos sobre el commit previo.
+Para ello, aplicaremos _git rebase main_ para llevar nuestro trabajo:
 
 ![Alt text](Fotografias/Ejercicio6.jpg)
 
 ![Alt text](Fotografias/Ejercicio7.jpg)
 
-- Pero para que estos cambios (mas actuales) estén correlacionados, tendremos que volver a hacer referencia al commit anterior. Para ello, esta vez aplicaremos un _git checkout main_ para movernos a él:
+- Pero para que estos cambios (mas actuales) estén correlacionados, tendremos que volver a hacer referencia al commit anterior. Para ello, aplicamos un _git checkout main_ para movernos a él a la vez que el HEAD:
 
 ![Alt text](Fotografias/Ejercicio8.jpg)
 
-- Rebaseamos de nuevo sobre el trabajo mas actual, para asi integrar los cambios:
+- Rebaseamos de nuevo sobre el commit mas reciente, para asi integrar los cambios:
 
 ![Alt text](Fotografias/Ejercicio9.jpg)
 
 ![Alt text](Fotografias/Ejercicio10.jpg)
 
-- Y finalmente tan solo nos quedaría clonar nuestro trabajo para que se vea reflejado en el remoto, para ello aplicaremos un _git clone_
+- Y finalmente clonamos nuestro trabajo para cumplir todos los objetivos que nos indicaron en el enunciado del problema, para ello aplicaremos un _git clone_
 
 ![Alt text](Fotografias/Ejercicio11.jpg)
 
