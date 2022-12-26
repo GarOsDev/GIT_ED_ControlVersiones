@@ -7,9 +7,9 @@ Esta es la ventana inicial con la cual la web comienza la practica:
 
 ![Alt text](Fotografias/introduccion1.jpg)
 
-Como podemos leer, una vez entendidos los conceptos asociados al pull de commits y el pusheo de los mismos, el ejercicio va a orientarnos respecto a que tipo de recursos o herramientas podemos utilizar si en un momento dado el desarrollador o los integrantes que están realizando el proyecto tiene puntos o eventos de desarrollo que pueden dar lugar a conflicto con la linea principal de trabajo.
+Como podemos leer, una vez entendidos los conceptos asociados al pull de commits y el pusheo de los mismos, el ejercicio va a orientarnos respecto a que tipo de recursos o herramientas podemos utilizar si en un momento dado el desarrollador o los integrantes que están realizando el proyecto tienen puntos o eventos de desarrollo que pueden dar lugar a conflicto con la linea principal de trabajo o remote branch.
 
-Pero todo este concepto vemos que estará englobado desde el punto de vista organizativo de repositorios, el cómo podemos gestionarlos para tratar lo menos posible o evitar cambios indeseados de trabajo ya desarrollado.
+Pero todo este concepto vemos que estará englobado desde el punto de vista integral de repositorios, el cómo podemos integrar nuestro trabajo para que, una vez entregado no haya ningún tipo de conflicto a nivel de desarrollo.
 
 Aún así, vamos a continuar con esta parte introductoria para ver que nos pretende enseñar la plataforma, si hacemos click al boton de 'siguiente' :
 
@@ -17,19 +17,19 @@ Aún así, vamos a continuar con esta parte introductoria para ver que nos prete
 
 Aqui podemos entender mucho mejor el contexto en el que nos encontramos.
 
-Cuando un desarrollador, partiendo de un repositorio base trabajo, realiza el conjunto de tareas que se le han sido asignados puede ocurrir que, paralelamente, al ser proyectos que generalmente son grupales, exista un equipo que haya modificado, creado o incluso eliminado parte del codigo o trabajo que este desarrollador ha tenido que realizar por ser su tarea trabajo. 
+Cuando un desarrollador, partiendo de un repositorio base trabajo, realiza el conjunto de tareas que se le han sido asignados puede ocurrir que, paralelamente, al ser proyectos generalmente grupales, existan desarrolladores que hayan modificado, creado o incluso eliminado parte del codigo o trabajo que haya realizado.
 
-No porque haya hecho mal su trabajo (que puede ser) sino por la mera evolucion temporal del proyecto que, como sabemos, está sujeto día si y día tambien a continuos cambios y actualizaciones por su propio desarrollo mismo.
+No porque haya hecho mal su trabajo (que puede ser) sino por la mera evolucion temporal del proyecto que, como sabemos, está sujeto día si y día tambien a constantes cambios y actualizaciones por su propio desarrollo mismo.
 
-Todo este conjunto de modificaciones y entregas de proyecto han hecho que el trabajo del desarrollador, por asi decirlo, carezca de validez a nivel de desarollo, ya que, en comparación a los ultimos cambios que se han ido realizando, éste ya ha quedado desactualizado.
+Todo este conjunto de modificaciones y entregas de proyecto han hecho que el trabajo del desarrollador, por asi decirlo, carezca de validez a nivel de proyecto, ya que, en comparación a los ultimos cambios que se han ido realizando, éste ya ha quedado desactualizado.
 
 ¿Como responde GIT ante estas situaciones? Esto es lo que nos pregunta la plataforma.
 
-Fuera de toda duda, lo primero que uno puede percibir es que existirá una gran desorganización a nivel de repositorios entre el trabajo que el desarrollador ha realizado, el que ha sido modificado ajenamente, y hasta incluso el entregado paralelamente, etc...
+Fuera de toda duda, lo primero que uno puede percibir es que existirá una gran desorganización a nivel de repositorios entre el trabajo que el desarrollador ha realizado, el que ha sido modificado ajenamente, y hasta incluso el entregado paralelamente.
 
-Como vemos, GIT _NO NOS PERMITIRÍA_ entregar el trabajo que seguramente nos haya costado realizar, sino que nos obligaría a adaptarnos a la situacion mas actual del repositorio que tomamos como base para poder asi, si queremos, integrar el codigo que éste ha desarrollado.
+Como vemos, GIT _NO NOS PERMITIRÍA_ entregar el trabajo que seguramente nos haya costado realizar, sino que nos obligaría a adaptarnos a la situacion mas actual del repositorio que tomamos como base para poder asi, si queremos, integrar el codigo que hemos desarrollado.
 
-Cualquier persona puede ver que esto sería un nido de conflictos de archivos y código, entre lo que uno ha hecho como parte de su trabajo y lo que se ha realizado paralelamente si no se ha tenido un feedback correcto entre ambas partes.
+Cualquier persona puede ver que esto sería un nido de conflictos de archivos y código, entre lo que uno ha hecho como parte de su trabajo y lo que se ha realizado paralelamente de forma remota si no se ha tenido un feedback correcto entre ambas partes.
 
 Aun así, hagamos click en siguiente para ver que más nos tiene que enseñar la web:
 
@@ -120,7 +120,7 @@ Una vez llegados a este punto, ya hemos visto todos los metodos de gestión de f
 
 ![Alt text](Fotografias/introduccion16.jpg)
 
-## Resolviendo Ejercicio
+# Resolviendo Ejercicio
 
 Como aprendimos, no podremos simplemente hacer un push para publicar nuestro trabajo hacia la rama remota, ya que GIT lo rechazará por haber una situación de mucha ambigüedad (debido a la divergencia del propio proyecto).
 
@@ -130,9 +130,13 @@ Por ello, partiendo de esta situacion inicial del ejercicio:
 
 ![Alt text](Fotografias/Ejercicio1.jpg)
 
-Aplicaremos el primer método para su resolución:
+Vemos que el objetivo planteado es el siguiente:
 
-- En primer lugar simularé la entrega de un trabajo propio escribiendo en la linea de comandos _git commit_
+![Alt text](Fotografias/objetivo.jpg)
+
+Vamos a resolver el ejercicio propuesto:
+
+- En primer lugar simularé la entrega del trabajo realizado por un compañero escribiendo en la linea de comandos _git commit_
 
 ![Alt text](Fotografias/Ejercicio2.jpg)
 
@@ -144,22 +148,22 @@ Aplicaremos el primer método para su resolución:
 
 ![Alt text](Fotografias/Ejercicio4.jpg)
 
-- Y simularemos una entrega paralela a la nuestra, como ya conocemos, con el comando _git commit_ lograremos tal proposito:
+- Y es aquí donde simularemos una entrega de nuestro propio trabajo, como ya conocemos, con el comando _git commit_ lograremos tal proposito:
 
 ![Alt text](Fotografias/Ejercicio5.jpg)
 
-- Una vez en este punto, haremos un rebase del trabajo paralelo al nuestro y lo aplicaremos a nuestra rama local.
-Para ello, aplicaremos _git rebase main_ para aplicar este trabajo a nuestra rama main:
+- Una vez en este punto, haremos un rebase de nuestro trabajo y lo aplicaremos a la rama de proyecto.
+Para ello, aplicaremos _git rebase main_ para aplicar nuestro trabajo sobre el remoto:
 
 ![Alt text](Fotografias/Ejercicio6.jpg)
 
 ![Alt text](Fotografias/Ejercicio7.jpg)
 
-- Pero para que estos cambios (mas actuales) se vean reflejados en nuestro trabajo, tendremos que volver a hacer referencia a nuestro main. Para ello, esta vez aplicaremos un _git checkout main_ para movernos a él:
+- Pero para que estos cambios (mas actuales) estén correlacionados, tendremos que volver a hacer referencia al commit anterior. Para ello, esta vez aplicaremos un _git checkout main_ para movernos a él:
 
 ![Alt text](Fotografias/Ejercicio8.jpg)
 
-- Rebaseamos de nuevo nuestro main sobre el trabajo mas actual, para asi integrar los cambios:
+- Rebaseamos de nuevo sobre el trabajo mas actual, para asi integrar los cambios:
 
 ![Alt text](Fotografias/Ejercicio9.jpg)
 

@@ -50,8 +50,8 @@ Si escribimos por consola **git describe main** estaríamos situándonos en el u
 ¿Que significa cada valor?:
 
 - v1: para main, v1 sería el **tag** o evento o "hito" mas cercano. Es por ello por lo que lo toma como referencia.
-- 2: el valor numérico 2, serían la cantidad de commits o "entregas" que existen a partir del tag de referencia v1.
-- gC2: al encontrarnos en C2 de main, sería su hash representativo.
+- 2: valor numérico 2, serían la cantidad de commits o "entregas" que existen a partir del tag de referencia v1.
+- gC2: para el commit C2 de main, su hash representativo.
 
 ### side
 
@@ -59,7 +59,7 @@ Si escribimos por consola **git describe main** estaríamos situándonos en el u
 
 - v2: como podemos ver, basandonos en el diagrama, v2 sería el **tag** de referencia.
 - 1: valor numerico 1, esto es el numero de entregas existentes desde el tag v2 hasta donde estamos c4 (side asterisco). Como podemos ver, una unica entrega, el commit C4 que se ha realizado.
-- gc4: el hash del punto que vamos a describir, es decir el commit 4 de la rama side.
+- gc4: el hash del commit indicado, es decir el commit 4 de la rama side.
 
 Y una vez mostrada esta pequeña introducción práctica, la web nos conduce a la resolución del ejercicio:
 
@@ -89,7 +89,7 @@ Obtenemos **v1_3_gC7**
 
 - v1: como podemos ver en el diagrama, para la rama bugFix v1 sería el hito que ésta toma como referencia
 - 3: valor numérico 3, que sería el número de commits desde el tag v1 hasta el punto en el que nos encontramos (c7), que como podemos contar serían 3.
-- gC7: el commit en el cual nos encontramos, el hash que este momento estamos describiendo
+- gC7: el hash del commit donde actualmente nos escontramos.
 
 Con esto, hemos visto como el comando _git describe_ puede sernos muy util para saber un punto importante de la rama o proyecto, sobre todo para saber puntos clave en el desarrollo de éste o desde que punto podríamos continuar nuestro trabajo. 
 
