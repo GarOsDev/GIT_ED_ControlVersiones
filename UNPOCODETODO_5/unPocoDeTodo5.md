@@ -29,7 +29,7 @@ Una vez resuelto el comando con referencia dada, la salida por consola mostrará
 
 ![Alt text](Fotografias/Introduccion_comandoSalida.jpg)
 
-Donde **numCommits** será la cantidad de entregas que se han realizado **a partir del tag** en el cual nos hemos situado y el **hash** (una especie de "firma" hexadecimal) abreviado está haciendo referencia al commit que en ese momento esta siendo indicado.
+Donde **numCommits** será la cantidad de entregas que se han realizado **a partir del tag** en el cual nos hemos situado y el **hash** (una especie de "firma" hexadecimal abreviado) que está haciendo referencia al commit respectivo.
 
 # ENTENDIENDO EJEMPLO PRÁCTICO 
 
@@ -87,7 +87,7 @@ Pero no nos quedemos aqui, para poder ver como aplicamos el comando que acabamos
 
 Obtenemos **v1_3_gC7**
 
-- v1: como podemos ver en el diagrama, para la rama bugFix v1 sería el hito que ésta toma como referencia
+- v1: como podemos ver en el diagrama, para la rama bugFix, v1 sería el hito que ésta toma como referencia
 - 3: valor numérico 3, que sería el número de commits desde el tag v1 hasta el punto en el que nos encontramos (c7), que como podemos contar serían 3.
 - gC7: el hash del commit donde actualmente nos escontramos.
 
