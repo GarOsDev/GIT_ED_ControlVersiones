@@ -15,19 +15,19 @@ Pues bien, GIT, a partir de un **hito** determinado, con el comando >git describ
 
 Pero no nos extendamos mucho mas, a continuación muestro cómo trata de enseñarnos la plataforma este concepto, y comenzaremos a realizar el ejercicio propuesto:
 
-![Alt text](Introduccion.jpg)
+![Alt text](Fotografias/Introduccion.jpg)
 
 ## EJECUCION DE COMANDO _GIT DESCRIBE_
 
 Una vez tenemos una idea aproximada sobre en qué consiste el comando _git describe_, tendremos que saber como usarlo correctamente en nuestro terminal GIT. En esta ocasión, vamos a mostrar como nos lo enseña la platarforma y posteriormente trataremos de razonar su funcionamiento:
 
-![Alt text](Introduccion_funcionamiento.jpg)
+![Alt text](Fotografias/Introduccion_funcionamiento.jpg)
 
 Como podemos enteder, para poder hacer uso de este comando, necesitaremos proporcionarle como parámetro una **<ref>**  o referencia que el que tomará GIT como punto de destino para situarnos en ese **tag** de proyecto. Nos informa la web que si no le proporcionamos ninguna referencia como parámetro, GIT automaticamente nos situará en el commit mas cercano.
 
 Una vez resuelto el comando con referencia dada, la salida por consola mostrará la siguiente información:
 
-![Alt text](Introduccion_comandoSalida.jpg)
+![Alt text](Fotografias/Introduccion_comandoSalida.jpg)
 
 Donde **numCommits** será la cantidad de entregas que se han realizado **a partir del tag** en el cual nos hemos situado y **hash** está haciendo referencia al commit que en ese momento esta siendo indicado.
 
@@ -35,11 +35,11 @@ Donde **numCommits** será la cantidad de entregas que se han realizado **a part
 
 Una vez hemos hecho la introducción teórica a este nuevo comando GIT, he decidido mostrar, antes de proceder a resolver el ejercicio propuesto, un ejemplo práctico que nos propone la plataforma, y es el siguiente:
 
-![Alt text](ejemploPractico1.jpg)
+![Alt text](Fotografias/ejemploPractico1.jpg)
 
 Vemos como, para la evolución de proyecto mostrada, estamos en la branch side. A continuación el programa nos muestra la salida por consola tanto si aplicamos **git describe** a **main** o a **side**:
 
-![Alt text](ejemploPractico2.jpg)
+![Alt text](Fotografias/ejemploPractico2.jpg)
 
 Y aqui podemos ver claramente el funcionamiento de este comando:
 
@@ -63,27 +63,27 @@ Si escribimos por consola **git describe main** estaríamos situándonos en el u
 
 Y una vez mostrada esta pequeña introducción práctica, la web nos conduce a la resolución del ejercicio:
 
-![Alt text](ejemploPracticoFinal.jpg)
+![Alt text](Fotografias/ejemploPracticoFinal.jpg)
 
 # RESOLVIENDO EJERCICIO
 
 - Comienzo el ejercicio propuesto partiendo desde la siguiente situación:
 
-![Alt text](ResolEjercicio1.jpg)
+![Alt text](Fotografias/ResolEjercicio1.jpg)
 
 Tal y como nos indica el cuadro de comandos, tendremos que hacer un commit de bugFix para finalizar el ejercicio, por ello escribimos **git commit**, para hacer una entrega del mismo:
 
-![Alt text](ResolEjercicio2.jpg)
+![Alt text](Fotografias/ResolEjercicio2.jpg)
 
-![Alt text](ResolEjercicio3.jpg)
+![Alt text](Fotografias/ResolEjercicio3.jpg)
 
 Y sencillamente con este paso, la web nos indica que hemos resuelto el ejercicio exitosamente:
 
-![Alt text](ResolEjercicioX.jpg)
+![Alt text](Fotografias/ResolEjercicioX.jpg)
 
 Pero no nos quedemos aqui, para poder ver como aplicamos el comando que acabamos de aprender, voy a escribir por linea de comando un ejemplo para **git describe c7**. Obtenemos el siguiente resultado:
 
-![Alt text](ResolEjercicioXY.jpg)
+![Alt text](Fotografias/ResolEjercicioXY.jpg)
 
 Obtenemos **v1_3_gC7**
 
