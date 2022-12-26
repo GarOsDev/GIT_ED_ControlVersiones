@@ -15,7 +15,7 @@ Aún así, vamos a continuar con esta parte introductoria para ver que nos prete
 
 ![Alt text](Fotografias/introduccion2.jpg)
 
-Aqui podemos entender mucho mejor el contexto en el que nos encontramos.
+Aquí podemos entender mucho mejor el contexto en el que nos encontramos.
 
 Cuando un desarrollador, partiendo de un repositorio base trabajo, realiza el conjunto de tareas que se le han sido asignados puede ocurrir que, paralelamente, al ser proyectos generalmente grupales, existan desarrolladores que hayan modificado, creado o incluso eliminado parte del codigo o trabajo que haya realizado.
 
@@ -169,7 +169,7 @@ Para ello, aplicaremos _git rebase main_ para llevar nuestro trabajo:
 
 ![Alt text](Fotografias/Ejercicio10.jpg)
 
-- Y finalmente clonamos nuestro trabajo para cumplir todos los objetivos que nos indicaron en el enunciado del problema, para ello aplicaremos un _git clone_
+- Y finalmente clonamos nuestro trabajo, cumpliendo todos los objetivos que nos indicaron en el enunciado del problema, para ello aplicaremos un _git clone_
 
 ![Alt text](Fotografias/Ejercicio11.jpg)
 
